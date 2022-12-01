@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ECG"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFF">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="ArduBlue"
+            app:titleMarginStart="10dp">
+
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/getDataButtonID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Get Data" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--            <Button-->
+            <!--                android:id="@+id/graphButtonID"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="@drawable/my_button_bg"-->
+            <!--                android:text="Temperature Graph" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/humunityGraphID"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="@drawable/my_button_bg"-->
+            <!--                android:text=" Humudity Graph" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dateTextID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Last Update"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#151719"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart"
+                    android:layout_width="406dp"
+                    android:layout_height="274dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+
+
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/String_Data_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/String_Data_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/heart_beat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="측정종료" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".ECG"-->
+    <!--    android:orientation="vertical">-->
+    <!--    -->
+
+    <!--    <com.github.mikephil.charting.charts.LineChart-->
+    <!--        android:id="@+id/linechart"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+
+    <!--</LinearLayout>-->
